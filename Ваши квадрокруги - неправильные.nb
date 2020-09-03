@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    276265,       5245]
-NotebookOptionsPosition[    272341,       5170]
-NotebookOutlinePosition[    272684,       5185]
-CellTagsIndexPosition[    272641,       5182]
+NotebookDataLength[    293983,       5667]
+NotebookOptionsPosition[    289763,       5589]
+NotebookOutlinePosition[    290106,       5604]
+CellTagsIndexPosition[    290063,       5601]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2650,20 +2650,24 @@ Cell[BoxData[
         RowBox[{
          RowBox[{
           RowBox[{
-           RowBox[{
-            RowBox[{"Sign", "[", 
-             RowBox[{"Cos", "[", "\[Phi]", "]"}], "]"}], 
-            SuperscriptBox[
-             RowBox[{"Abs", "[", 
-              RowBox[{"Cos", "[", "\[Phi]", "]"}], "]"}], 
-             RowBox[{"2", "/", "n"}]]}], "+", 
-           RowBox[{"I", " ", 
-            RowBox[{"Sign", "[", 
-             RowBox[{"Sin", "[", "\[Phi]", "]"}], "]"}], 
-            SuperscriptBox[
-             RowBox[{"Abs", "[", 
-              RowBox[{"Sin", "[", "\[Phi]", "]"}], "]"}], 
-             RowBox[{"2", "/", "n"}]]}]}], "/.", 
+           SuperscriptBox["E", 
+            RowBox[{"I", " ", "\[Phi]"}]], 
+           RowBox[{"(", 
+            FractionBox["1", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  SuperscriptBox[
+                   RowBox[{"Cos", "[", "\[Phi]", "]"}], "2"], ")"}], 
+                 RowBox[{"n", "/", "2"}]], "+", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  SuperscriptBox[
+                   RowBox[{"Sin", "[", "\[Phi]", "]"}], "2"], ")"}], 
+                 RowBox[{"n", "/", "2"}]]}], ")"}], 
+              RowBox[{"1", "/", "n"}]]], ")"}]}], "/.", 
           RowBox[{"n", "\[Rule]", "4"}]}], ",", "\[IndentingNewLine]", 
          RowBox[{
           SuperscriptBox["E", 
@@ -2738,8 +2742,9 @@ Cell[BoxData[
               
               ImageSize->
                Dynamic[{
-                Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                 AbsoluteCurrentValue[Magnification]}],
+                Automatic, 
+                 1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}],
               PlotRangePadding->None],
              StyleBox[
               RowBox[{"Hue", "[", 
@@ -2786,8 +2791,9 @@ Cell[BoxData[
               
               ImageSize->
                Dynamic[{
-                Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                 AbsoluteCurrentValue[Magnification]}],
+                Automatic, 
+                 1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}],
               PlotRangePadding->None],
              StyleBox[
               RowBox[{"Hue", "[", 
@@ -2828,7 +2834,6 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{"z", ",", "0.1"}], "}"}], ",", "0.01", ",", "2"}], "}"}]}], 
   "]"}]], "Input",
- CellOpen->False,
  CellChangeTimes->{{3.808102199404811*^9, 3.8081022913995557`*^9}, {
    3.808102338596679*^9, 3.808102338820716*^9}, {3.808102408673749*^9, 
    3.8081024938866916`*^9}, {3.808102930604627*^9, 3.8081030121452303`*^9}, 
@@ -2837,10 +2842,10 @@ Cell[BoxData[
    3.8081033558643875`*^9}, 3.80810343211913*^9, {3.8081034815131307`*^9, 
    3.8081035061550107`*^9}, {3.808103752328248*^9, 3.8081037527354975`*^9}, 
    3.808104342403755*^9, {3.8081047940225472`*^9, 3.808104796300322*^9}, {
-   3.808109114960391*^9, 3.8081091224740167`*^9}},
+   3.808109114960391*^9, 3.8081091224740167`*^9}, 3.808118178992039*^9},
  Background->GrayLevel[0.85],
  CellLabel->
-  "In[601]:=",ExpressionUUID->"0a2d4d30-02a3-4705-9ebf-006b0186c4fc"],
+  "In[674]:=",ExpressionUUID->"0a2d4d30-02a3-4705-9ebf-006b0186c4fc"],
 
 Cell[BoxData[
  TagBox[
@@ -2852,14 +2857,14 @@ Cell[BoxData[
        Hold[$CellContext`k$$], 0.266}, 0.1, 1}, {{
        Hold[$CellContext`z$$], 0.1}, 0.01, 2}}, Typeset`size$$ = {
     360., {177., 183.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`k$1703216$$ = 
-    0, $CellContext`z$1703217$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`k$1940120$$ = 
+    0, $CellContext`z$1940121$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`k$$ = 0.266, $CellContext`z$$ = 0.1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`k$$, $CellContext`k$1703216$$, 0], 
-        Hold[$CellContext`z$$, $CellContext`z$1703217$$, 0]}, 
+        Hold[$CellContext`k$$, $CellContext`k$1940120$$, 0], 
+        Hold[$CellContext`z$$, $CellContext`z$1940121$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -2867,12 +2872,12 @@ Cell[BoxData[
          Typeset`skipInitDone$$}, "Body" :> ParametricPlot[
         Evaluate[
          ReIm[{
-           ReplaceAll[Sign[
-               Cos[$CellContext`\[Phi]]] Abs[
-                Cos[$CellContext`\[Phi]]]^(2/$CellContext`n) + I Sign[
-               Sin[$CellContext`\[Phi]]] Abs[
-                Sin[$CellContext`\[Phi]]]^(2/$CellContext`n), $CellContext`n -> 
-            4], E^(I $CellContext`\[Phi]) 
+           ReplaceAll[
+           E^(I $CellContext`\[Phi]) (
+             1/((Cos[$CellContext`\[Phi]]^2)^($CellContext`n/2) + (
+                Sin[$CellContext`\[Phi]]^2)^($CellContext`n/2))^(
+              1/$CellContext`n)), $CellContext`n -> 4], 
+           E^(I $CellContext`\[Phi]) 
            Sqrt[(1 + Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
              Sqrt[1 + (4 (1 - $CellContext`z$$)/$CellContext`z$$^2) 
                 Cos[2 $CellContext`\[Phi]]^2 + (1/$CellContext`k$$^4 - 
@@ -2907,9 +2912,10 @@ Cell[BoxData[
    3.808103213602851*^9}, {3.808103275167824*^9, 3.8081032892629642`*^9}, {
    3.808103322223285*^9, 3.8081033566992908`*^9}, 3.8081034329162197`*^9, {
    3.808103482357303*^9, 3.8081035066736345`*^9}, 3.8081037529588423`*^9, 
-   3.808104569968357*^9, 3.8081048246970267`*^9, 3.808109122956575*^9},
+   3.808104569968357*^9, 3.8081048246970267`*^9, 3.808109122956575*^9, 
+   3.808118181240037*^9},
  CellLabel->
-  "Out[601]=",ExpressionUUID->"aa6df7d8-2d86-4896-ad84-e84527638aee"]
+  "Out[674]=",ExpressionUUID->"4d904db8-855b-458a-b7d6-6c0507fb08b9"]
 }, Open  ]],
 
 Cell["\<\
@@ -2938,20 +2944,24 @@ Cell[BoxData[
         RowBox[{
          RowBox[{
           RowBox[{
-           RowBox[{
-            RowBox[{"Sign", "[", 
-             RowBox[{"Cos", "[", "\[Phi]", "]"}], "]"}], 
-            SuperscriptBox[
-             RowBox[{"Abs", "[", 
-              RowBox[{"Cos", "[", "\[Phi]", "]"}], "]"}], 
-             RowBox[{"2", "/", "n"}]]}], "+", 
-           RowBox[{"I", " ", 
-            RowBox[{"Sign", "[", 
-             RowBox[{"Sin", "[", "\[Phi]", "]"}], "]"}], 
-            SuperscriptBox[
-             RowBox[{"Abs", "[", 
-              RowBox[{"Sin", "[", "\[Phi]", "]"}], "]"}], 
-             RowBox[{"2", "/", "n"}]]}]}], "/.", 
+           SuperscriptBox["E", 
+            RowBox[{"I", " ", "\[Phi]"}]], 
+           RowBox[{"(", 
+            FractionBox["1", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  SuperscriptBox[
+                   RowBox[{"Cos", "[", "\[Phi]", "]"}], "2"], ")"}], 
+                 RowBox[{"n", "/", "2"}]], "+", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  SuperscriptBox[
+                   RowBox[{"Sin", "[", "\[Phi]", "]"}], "2"], ")"}], 
+                 RowBox[{"n", "/", "2"}]]}], ")"}], 
+              RowBox[{"1", "/", "n"}]]], ")"}]}], "/.", 
           RowBox[{"n", "\[Rule]", "5"}]}], ",", "\[IndentingNewLine]", 
          RowBox[{
           SuperscriptBox["E", 
@@ -3026,8 +3036,9 @@ Cell[BoxData[
               
               ImageSize->
                Dynamic[{
-                Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                 AbsoluteCurrentValue[Magnification]}],
+                Automatic, 
+                 1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}],
               PlotRangePadding->None],
              StyleBox[
               RowBox[{"Hue", "[", 
@@ -3074,8 +3085,9 @@ Cell[BoxData[
               
               ImageSize->
                Dynamic[{
-                Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                 AbsoluteCurrentValue[Magnification]}],
+                Automatic, 
+                 1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}],
               PlotRangePadding->None],
              StyleBox[
               RowBox[{"Hue", "[", 
@@ -3116,33 +3128,33 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{"z", ",", "0.48"}], "}"}], ",", "0.3", ",", "2"}], "}"}]}], 
   "]"}]], "Input",
- CellOpen->False,
  CellChangeTimes->{{3.8081035276962795`*^9, 3.808103625839467*^9}, {
    3.808103740369912*^9, 3.8081037404612894`*^9}, {3.808104269116679*^9, 
    3.808104334791744*^9}, 3.808104437208226*^9, {3.8081045051667724`*^9, 
-   3.808104533034113*^9}, {3.8081047865716305`*^9, 3.808104791152003*^9}},
+   3.808104533034113*^9}, {3.8081047865716305`*^9, 3.808104791152003*^9}, 
+   3.808118196764037*^9},
  Background->GrayLevel[0.85],
  CellLabel->
-  "In[584]:=",ExpressionUUID->"2cd21fb0-90bb-406c-a7cb-3d353b58dc06"],
+  "In[675]:=",ExpressionUUID->"2cd21fb0-90bb-406c-a7cb-3d353b58dc06"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`k$$ = 0.5999999999999273, $CellContext`z$$ =
-     0.48000000000014553`, Typeset`show$$ = True, Typeset`bookmarkList$$ = {},
-     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+   DynamicModuleBox[{$CellContext`k$$ = 0.6, $CellContext`z$$ = 0.48, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`k$$], 0.6}, 0.1, 1}, {{
        Hold[$CellContext`z$$], 0.48}, 0.3, 2}}, Typeset`size$$ = {
     360., {178., 182.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`k$1138277$$ = 
-    0, $CellContext`z$1138278$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`k$1940370$$ = 
+    0, $CellContext`z$1940371$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`k$$ = 0.6, $CellContext`z$$ = 0.48}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`k$$, $CellContext`k$1138277$$, 0], 
-        Hold[$CellContext`z$$, $CellContext`z$1138278$$, 0]}, 
+        Hold[$CellContext`k$$, $CellContext`k$1940370$$, 0], 
+        Hold[$CellContext`z$$, $CellContext`z$1940371$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -3150,12 +3162,12 @@ Cell[BoxData[
          Typeset`skipInitDone$$}, "Body" :> ParametricPlot[
         Evaluate[
          ReIm[{
-           ReplaceAll[Sign[
-               Cos[$CellContext`\[Phi]]] Abs[
-                Cos[$CellContext`\[Phi]]]^(2/$CellContext`n) + I Sign[
-               Sin[$CellContext`\[Phi]]] Abs[
-                Sin[$CellContext`\[Phi]]]^(2/$CellContext`n), $CellContext`n -> 
-            5], E^(I $CellContext`\[Phi]) 
+           ReplaceAll[
+           E^(I $CellContext`\[Phi]) (
+             1/((Cos[$CellContext`\[Phi]]^2)^($CellContext`n/2) + (
+                Sin[$CellContext`\[Phi]]^2)^($CellContext`n/2))^(
+              1/$CellContext`n)), $CellContext`n -> 5], 
+           E^(I $CellContext`\[Phi]) 
            Sqrt[(1 + Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
              Sqrt[1 + (4 (1 - $CellContext`z$$)/$CellContext`z$$^2) 
                 Cos[2 $CellContext`\[Phi]]^2 + (1/$CellContext`k$$^4 - 
@@ -3170,7 +3182,7 @@ Cell[BoxData[
       "Specifications" :> {{{$CellContext`k$$, 0.6}, 0.1, 
          1}, {{$CellContext`z$$, 0.48}, 0.3, 2}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {264., 270.}},
+     ImageSizeCache->{411., {238., 244.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -3184,9 +3196,9 @@ Cell[BoxData[
  CellChangeTimes->{{3.8081044284025383`*^9, 3.808104467766203*^9}, {
    3.8081045111212463`*^9, 3.808104533562291*^9}, {3.8081045933001213`*^9, 
    3.8081045954126005`*^9}, 3.808104824846523*^9, {3.8081090598363967`*^9, 
-   3.808109061093365*^9}},
+   3.808109061093365*^9}, 3.808118197863064*^9},
  CellLabel->
-  "Out[584]=",ExpressionUUID->"1b57ee87-fe94-4ed0-a916-88876f43ff10"]
+  "Out[675]=",ExpressionUUID->"f8975e97-58ea-4f24-b705-39cd03c32b90"]
 }, Open  ]],
 
 Cell["n=10 (k=0.942, z=1.02):", "Text",
@@ -3211,20 +3223,24 @@ Cell[BoxData[
         RowBox[{
          RowBox[{
           RowBox[{
-           RowBox[{
-            RowBox[{"Sign", "[", 
-             RowBox[{"Cos", "[", "\[Phi]", "]"}], "]"}], 
-            SuperscriptBox[
-             RowBox[{"Abs", "[", 
-              RowBox[{"Cos", "[", "\[Phi]", "]"}], "]"}], 
-             RowBox[{"2", "/", "n"}]]}], "+", 
-           RowBox[{"I", " ", 
-            RowBox[{"Sign", "[", 
-             RowBox[{"Sin", "[", "\[Phi]", "]"}], "]"}], 
-            SuperscriptBox[
-             RowBox[{"Abs", "[", 
-              RowBox[{"Sin", "[", "\[Phi]", "]"}], "]"}], 
-             RowBox[{"2", "/", "n"}]]}]}], "/.", 
+           SuperscriptBox["E", 
+            RowBox[{"I", " ", "\[Phi]"}]], 
+           RowBox[{"(", 
+            FractionBox["1", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  SuperscriptBox[
+                   RowBox[{"Cos", "[", "\[Phi]", "]"}], "2"], ")"}], 
+                 RowBox[{"n", "/", "2"}]], "+", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  SuperscriptBox[
+                   RowBox[{"Sin", "[", "\[Phi]", "]"}], "2"], ")"}], 
+                 RowBox[{"n", "/", "2"}]]}], ")"}], 
+              RowBox[{"1", "/", "n"}]]], ")"}]}], "/.", 
           RowBox[{"n", "\[Rule]", "10"}]}], ",", "\[IndentingNewLine]", 
          RowBox[{
           SuperscriptBox["E", 
@@ -3299,8 +3315,9 @@ Cell[BoxData[
               
               ImageSize->
                Dynamic[{
-                Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                 AbsoluteCurrentValue[Magnification]}],
+                Automatic, 
+                 1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}],
               PlotRangePadding->None],
              StyleBox[
               RowBox[{"Hue", "[", 
@@ -3347,8 +3364,9 @@ Cell[BoxData[
               
               ImageSize->
                Dynamic[{
-                Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                 AbsoluteCurrentValue[Magnification]}],
+                Automatic, 
+                 1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}],
               PlotRangePadding->None],
              StyleBox[
               RowBox[{"Hue", "[", 
@@ -3389,16 +3407,15 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{"z", ",", "1.02"}], "}"}], ",", "0.3", ",", "2"}], "}"}]}], 
   "]"}]], "Input",
- CellOpen->False,
  CellChangeTimes->{{3.8081035276962795`*^9, 3.808103625839467*^9}, {
    3.808103740369912*^9, 3.8081037404612894`*^9}, {3.808104269116679*^9, 
    3.808104334791744*^9}, 3.808104437208226*^9, {3.8081045051667724`*^9, 
    3.808104533034113*^9}, {3.808104659317998*^9, 3.8081046594093876`*^9}, {
    3.8081046952465734`*^9, 3.808104725463564*^9}, {3.808104775287134*^9, 
-   3.8081047831317396`*^9}},
+   3.8081047831317396`*^9}, 3.808118212757039*^9},
  Background->GrayLevel[0.85],
  CellLabel->
-  "In[585]:=",ExpressionUUID->"c4595508-2b91-42b4-b1ca-0ca898de8fc4"],
+  "In[676]:=",ExpressionUUID->"c4595508-2b91-42b4-b1ca-0ca898de8fc4"],
 
 Cell[BoxData[
  TagBox[
@@ -3410,14 +3427,14 @@ Cell[BoxData[
        Hold[$CellContext`k$$], 0.942}, 0.1, 1}, {{
        Hold[$CellContext`z$$], 1.02}, 0.3, 2}}, Typeset`size$$ = {
     360., {177., 183.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`k$1138330$$ = 
-    0, $CellContext`z$1138331$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`k$1940619$$ = 
+    0, $CellContext`z$1940620$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`k$$ = 0.942, $CellContext`z$$ = 1.02}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`k$$, $CellContext`k$1138330$$, 0], 
-        Hold[$CellContext`z$$, $CellContext`z$1138331$$, 0]}, 
+        Hold[$CellContext`k$$, $CellContext`k$1940619$$, 0], 
+        Hold[$CellContext`z$$, $CellContext`z$1940620$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -3425,12 +3442,12 @@ Cell[BoxData[
          Typeset`skipInitDone$$}, "Body" :> ParametricPlot[
         Evaluate[
          ReIm[{
-           ReplaceAll[Sign[
-               Cos[$CellContext`\[Phi]]] Abs[
-                Cos[$CellContext`\[Phi]]]^(2/$CellContext`n) + I Sign[
-               Sin[$CellContext`\[Phi]]] Abs[
-                Sin[$CellContext`\[Phi]]]^(2/$CellContext`n), $CellContext`n -> 
-            10], E^(I $CellContext`\[Phi]) 
+           ReplaceAll[
+           E^(I $CellContext`\[Phi]) (
+             1/((Cos[$CellContext`\[Phi]]^2)^($CellContext`n/2) + (
+                Sin[$CellContext`\[Phi]]^2)^($CellContext`n/2))^(
+              1/$CellContext`n)), $CellContext`n -> 10], 
+           E^(I $CellContext`\[Phi]) 
            Sqrt[(1 + Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
              Sqrt[1 + (4 (1 - $CellContext`z$$)/$CellContext`z$$^2) 
                 Cos[2 $CellContext`\[Phi]]^2 + (1/$CellContext`k$$^4 - 
@@ -3458,9 +3475,411 @@ Cell[BoxData[
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.8081046600396123`*^9, {3.8081046919150305`*^9, 3.8081047548390694`*^9}, 
-   3.8081048249786453`*^9},
+   3.8081048249786453`*^9, 3.808118226692037*^9},
  CellLabel->
-  "Out[585]=",ExpressionUUID->"3ae2718d-c6c0-4adb-a79c-17d718ee0c7c"]
+  "Out[676]=",ExpressionUUID->"af716369-4027-43cc-b140-d24438712e33"]
+}, Open  ]],
+
+Cell["\<\
+\:041c\:043e\:0436\:043d\:043e \:0442\:0430\:043a\:0436\:0435 \:043f\:043e\
+\:0441\:0440\:0430\:0432\:043d\:0438\:0432\:0430\:0442\:044c \:043d\:0435 \
+\:0441\:0430\:043c\:0438 \:0444\:0438\:0433\:0443\:0440\:044b, \:0430 \:0438\
+\:0445 \:043f\:0440\:043e\:0438\:0437\:0432\:043e\:0434\:043d\:044b\:0435 - \
+\:0442.\:0435. \:043d\:0430\:0441\:043a\:043e\:043b\:044c\:043a\:043e \:0440\
+\:0435\:0437\:043a\:043e \:043c\:0435\:043d\:044f\:0435\:0442\:0441\:044f \
+\:043d\:0430\:043a\:043b\:043e\:043d \:043f\:0443\:0442\:0438 \:0432\:043e \
+\:0432\:0440\:0435\:043c\:044f \:043e\:0442\:0440\:0438\:0441\:043e\:0432\
+\:043a\:0438:\
+\>", "Text",
+ CellChangeTimes->{{3.8081186035780363`*^9, 
+  3.808118686716037*^9}},ExpressionUUID->"57aaebdb-e122-4a14-9de7-\
+2d1c4b9758e7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox[
+              RowBox[{"(", 
+               SuperscriptBox[
+                RowBox[{"Cos", "[", "\[Phi]", "]"}], "2"], ")"}], 
+              RowBox[{"n", "/", "2"}]], "+", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               SuperscriptBox[
+                RowBox[{"Sin", "[", "\[Phi]", "]"}], "2"], ")"}], 
+              RowBox[{"n", "/", "2"}]]}], ")"}], 
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"1", "+", "n"}], "n"]}]], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"\[ImaginaryI]", " ", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               SuperscriptBox[
+                RowBox[{"Cos", "[", "\[Phi]", "]"}], "2"], ")"}], 
+              RowBox[{"n", "/", "2"}]], " ", 
+             RowBox[{"Sec", "[", "\[Phi]", "]"}]}], "-", 
+            RowBox[{
+             RowBox[{"Csc", "[", "\[Phi]", "]"}], " ", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               SuperscriptBox[
+                RowBox[{"Sin", "[", "\[Phi]", "]"}], "2"], ")"}], 
+              RowBox[{"n", "/", "2"}]]}]}], ")"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"\[ImaginaryI]", " ", 
+            SuperscriptBox["\[ExponentialE]", 
+             RowBox[{
+              RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", "\[Phi]"}]], " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox[
+               RowBox[{"1", "+", 
+                SqrtBox[
+                 FractionBox[
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "z"}], ")"}], "2"], 
+                  SuperscriptBox["z", "2"]]]}], 
+               RowBox[{"1", "+", 
+                SqrtBox[
+                 RowBox[{"1", "-", 
+                  FractionBox[
+                   RowBox[{"4", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "z"}], ")"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", " ", "\[Phi]"}], "]"}], "2"]}], 
+                   SuperscriptBox["z", "2"]], "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    FractionBox["1", 
+                    SuperscriptBox["k", "4"]], "-", 
+                    FractionBox["2", 
+                    SuperscriptBox["k", "2"]]}], ")"}], " ", 
+                   SuperscriptBox[
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", " ", "\[Phi]"}], "]"}], "2"]}]}]]}]], ")"}], 
+             RowBox[{"3", "/", "2"}]], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", 
+                 SuperscriptBox["\[ExponentialE]", 
+                  RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Phi]"}]]}], 
+                ")"}], " ", 
+               SuperscriptBox["z", "2"]}], "-", 
+              RowBox[{"2", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", 
+                 SuperscriptBox["\[ExponentialE]", 
+                  RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Phi]"}]]}], 
+                ")"}], " ", 
+               SuperscriptBox["k", "2"], " ", 
+               SuperscriptBox["z", "2"]}], "+", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["k", "4"], " ", 
+               RowBox[{"(", 
+                RowBox[{"2", "-", 
+                 RowBox[{"2", " ", "z"}], "+", 
+                 RowBox[{
+                  SuperscriptBox["\[ExponentialE]", 
+                   RowBox[{"4", " ", "\[ImaginaryI]", " ", "\[Phi]"}]], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "-", 
+                    RowBox[{"2", " ", "z"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["z", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SqrtBox[
+                    RowBox[{"1", "-", 
+                    FractionBox[
+                    RowBox[{"4", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "z"}], ")"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", " ", "\[Phi]"}], "]"}], "2"]}], 
+                    SuperscriptBox["z", "2"]], "+", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["k", "2"]}]}], ")"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", " ", "\[Phi]"}], "]"}], "2"]}], 
+                    SuperscriptBox["k", "4"]]}]]}], ")"}]}]}], ")"}]}]}], 
+                ")"}]}]}], ")"}]}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"2", " ", 
+            SuperscriptBox["k", "4"], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              SqrtBox[
+               FractionBox[
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "z"}], ")"}], "2"], 
+                SuperscriptBox["z", "2"]]]}], ")"}], " ", 
+            SuperscriptBox["z", "2"], " ", 
+            SqrtBox[
+             RowBox[{"1", "-", 
+              FractionBox[
+               RowBox[{"4", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "1"}], "+", "z"}], ")"}], " ", 
+                SuperscriptBox[
+                 RowBox[{"Cos", "[", 
+                  RowBox[{"2", " ", "\[Phi]"}], "]"}], "2"]}], 
+               SuperscriptBox["z", "2"]], "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 FractionBox["1", 
+                  SuperscriptBox["k", "4"]], "-", 
+                 FractionBox["2", 
+                  SuperscriptBox["k", "2"]]}], ")"}], " ", 
+               SuperscriptBox[
+                RowBox[{"Sin", "[", 
+                 RowBox[{"2", " ", "\[Phi]"}], "]"}], "2"]}]}]]}], ")"}]}]}], 
+        "\[IndentingNewLine]", "}"}], "//", "ReIm"}], "//", "Evaluate"}], 
+     "\[IndentingNewLine]", ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Phi]", ",", "0.01", ",", 
+       RowBox[{"2", "Pi"}]}], " ", "}"}], ",", 
+     RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Thickness", "[", "0.03", "]"}], ",", 
+          RowBox[{"Opacity", "[", "0.3", "]"}], ",", 
+          InterpretationBox[
+           ButtonBox[
+            TooltipBox[
+             GraphicsBox[{
+               {GrayLevel[0], RectangleBox[{0, 0}]}, 
+               {GrayLevel[0], RectangleBox[{1, -1}]}, 
+               {Hue[0.19, 1, 0.75], RectangleBox[{0, -1}, {2, 1}]}},
+              AspectRatio->1,
+              DefaultBaseStyle->"ColorSwatchGraphics",
+              Frame->True,
+              FrameStyle->Hue[0.19000000000000003`, 1., 0.5],
+              FrameTicks->None,
+              
+              ImageSize->
+               Dynamic[{
+                Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                 AbsoluteCurrentValue[Magnification]}],
+              PlotRangePadding->None],
+             StyleBox[
+              RowBox[{"Hue", "[", 
+                RowBox[{"0.19`", ",", "1", ",", "0.75`"}], "]"}], NumberMarks -> 
+              False]],
+            Appearance->None,
+            BaseStyle->{},
+            BaselinePosition->Baseline,
+            ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+              If[
+               Not[
+                AbsoluteCurrentValue["Deployed"]], 
+               SelectionMove[Typeset`box$, All, Expression]; 
+               FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+               FrontEnd`Private`$ColorSelectorInitialColor = 
+                Hue[0.19, 1, 0.75]; 
+               FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+               MathLink`CallFrontEnd[
+                 FrontEnd`AttachCell[Typeset`box$, 
+                  FrontEndResource["HueColorValueSelector"], {
+                  0, {Left, Bottom}}, {Left, Top}, 
+                  "ClosingActions" -> {
+                   "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+            DefaultBaseStyle->{},
+            Evaluator->Automatic,
+            Method->"Preemptive"],
+           Hue[0.19, 1, 0.75],
+           Editable->False,
+           Selectable->False]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Thick", ",", 
+          InterpretationBox[
+           ButtonBox[
+            TooltipBox[
+             GraphicsBox[{
+               {GrayLevel[0], RectangleBox[{0, 0}]}, 
+               {GrayLevel[0], RectangleBox[{1, -1}]}, 
+               {Hue[0.8, 1, 0.64], RectangleBox[{0, -1}, {2, 1}]}},
+              AspectRatio->1,
+              DefaultBaseStyle->"ColorSwatchGraphics",
+              Frame->True,
+              FrameStyle->Hue[0.8000000000000002, 1., 0.4266666666666667],
+              FrameTicks->None,
+              
+              ImageSize->
+               Dynamic[{
+                Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                 AbsoluteCurrentValue[Magnification]}],
+              PlotRangePadding->None],
+             StyleBox[
+              RowBox[{"Hue", "[", 
+                RowBox[{"0.8`", ",", "1", ",", "0.64`"}], "]"}], NumberMarks -> 
+              False]],
+            Appearance->None,
+            BaseStyle->{},
+            BaselinePosition->Baseline,
+            ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+              If[
+               Not[
+                AbsoluteCurrentValue["Deployed"]], 
+               SelectionMove[Typeset`box$, All, Expression]; 
+               FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+               FrontEnd`Private`$ColorSelectorInitialColor = 
+                Hue[0.8, 1, 0.64]; 
+               FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+               MathLink`CallFrontEnd[
+                 FrontEnd`AttachCell[Typeset`box$, 
+                  FrontEndResource["HueColorValueSelector"], {
+                  0, {Left, Bottom}}, {Left, Top}, 
+                  "ClosingActions" -> {
+                   "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+            DefaultBaseStyle->{},
+            Evaluator->Automatic,
+            Method->"Preemptive"],
+           Hue[0.8, 1, 0.64],
+           Editable->False,
+           Selectable->False]}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"Exclusions", "\[Rule]", "None"}]}], "]"}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "5"}], "}"}], ",", "2", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"k", ",", "0.6"}], "}"}], ",", "0.1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"z", ",", "0.48"}], "}"}], ",", "0.01", ",", "2"}], "}"}]}], 
+  "]"}]], "Input",
+ CellOpen->False,
+ CellChangeTimes->{{3.808118732074038*^9, 3.808118741129037*^9}, {
+  3.808118910520037*^9, 3.8081189137910357`*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[700]:=",ExpressionUUID->"53675e78-e701-4981-8259-f2e095b73574"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`k$$ = 0.6, $CellContext`n$$ = 
+    5, $CellContext`z$$ = 0.48, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`n$$], 5}, 2, 10}, {{
+       Hold[$CellContext`k$$], 0.6}, 0.1, 1}, {{
+       Hold[$CellContext`z$$], 0.48}, 0.01, 2}}, Typeset`size$$ = {
+    360., {177., 183.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`n$1964150$$ = 
+    0, $CellContext`k$1964151$$ = 0, $CellContext`z$1964152$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`k$$ = 0.6, $CellContext`n$$ = 
+        5, $CellContext`z$$ = 0.48}, "ControllerVariables" :> {
+        Hold[$CellContext`n$$, $CellContext`n$1964150$$, 0], 
+        Hold[$CellContext`k$$, $CellContext`k$1964151$$, 0], 
+        Hold[$CellContext`z$$, $CellContext`z$1964152$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ParametricPlot[
+        Evaluate[
+         ReIm[{((Cos[$CellContext`\[Phi]]^2)^($CellContext`n$$/2) + (
+               Sin[$CellContext`\[Phi]]^2)^($CellContext`n$$/2))^(-((
+               1 + $CellContext`n$$)/$CellContext`n$$)) (
+            I (Cos[$CellContext`\[Phi]]^2)^($CellContext`n$$/2) 
+             Sec[$CellContext`\[Phi]] - 
+            Csc[$CellContext`\[Phi]] (
+              Sin[$CellContext`\[Phi]]^2)^($CellContext`n$$/2)), (I 
+            E^((-3) I $CellContext`\[Phi]) ((1 + 
+               Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
+              Sqrt[1 - 4 (-1 + $CellContext`z$$) 
+                Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2 + (
+                  1/$CellContext`k$$^4 - 2/$CellContext`k$$^2) 
+                 Sin[2 $CellContext`\[Phi]]^2]))^(3/
+              2) ((-1 + E^(4 I $CellContext`\[Phi])) $CellContext`z$$^2 - 
+             2 (-1 + E^(4 
+                I $CellContext`\[Phi])) $CellContext`k$$^2 $CellContext`z$$^2 + 
+             2 $CellContext`k$$^4 (2 - 2 $CellContext`z$$ + 
+               E^(4 I $CellContext`\[Phi]) (2 - 
+                 2 $CellContext`z$$ + $CellContext`z$$^2 (1 + 
+                   Sqrt[1 - 4 (-1 + $CellContext`z$$) 
+                    Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2 + (1 - 
+                    2 $CellContext`k$$^2) 
+                    Sin[2 $CellContext`\[Phi]]^2/$CellContext`k$$^4])))))/(
+           2 $CellContext`k$$^4 (1 + 
+            Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2]) \
+$CellContext`z$$^2 
+           Sqrt[1 - 4 (-1 + $CellContext`z$$) 
+             Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2 + (
+               1/$CellContext`k$$^4 - 2/$CellContext`k$$^2) 
+              Sin[2 $CellContext`\[Phi]]^2])}]], {$CellContext`\[Phi], 0.01, 
+         2 Pi}, GridLines -> Automatic, PlotStyle -> {{
+           Thickness[0.03], 
+           Opacity[0.3], 
+           Hue[0.19, 1, 0.75]}, {Thick, 
+           Hue[0.8, 1, 0.64]}}, Exclusions -> None], 
+      "Specifications" :> {{{$CellContext`n$$, 5}, 2, 
+         10}, {{$CellContext`k$$, 0.6}, 0.1, 1}, {{$CellContext`z$$, 0.48}, 
+         0.01, 2}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {252., 258.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.808118742620037*^9, 3.8081188299970365`*^9, {3.8081189142440367`*^9, 
+   3.8081189270640373`*^9}},
+ CellLabel->
+  "Out[700]=",ExpressionUUID->"fdf7b963-b8f2-4aaa-98a9-61725e7b966a"]
 }, Open  ]],
 
 Cell["\<\
@@ -5051,8 +5470,8 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = -2.3990680547912584`, Typeset`show$$ =
-     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`a$$ = -0.9526787683163773, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`a$$], -Pi, Pi}}, Typeset`size$$ = {
@@ -5072,7 +5491,7 @@ Cell[BoxData[
            ReplaceAll[
            E^(I $CellContext`\[Phi]) 
             Sqrt[(1 + Sqrt[(-2 + $CellContext`z)^2/$CellContext`z^2])/(1 + 
-              Sqrt[1 + (4 (1 - $CellContext`z)/$CellContext`z^2) 
+              Sqrt[1 + (4 ((1 - $CellContext`z)/$CellContext`z^2)) 
                  Cos[2 $CellContext`\[Phi]]^2 + (1/$CellContext`k^4 - 
                   2/$CellContext`k^2) 
                  Sin[2 $CellContext`\[Phi]]^2])], {$CellContext`z -> 
@@ -5169,7 +5588,7 @@ ae65ca0d14a5"]
 }, Open  ]]
 },
 WindowSize->{906, 742},
-WindowMargins->{{249, Automatic}, {Automatic, 90}},
+WindowMargins->{{Automatic, 481}, {Automatic, 11}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
 ]
@@ -5213,38 +5632,41 @@ Cell[146003, 2574, 1299, 40, 121, "Input",ExpressionUUID->"fb3d672f-dfb6-4664-a1
  Evaluatable->False],
 Cell[147305, 2616, 1391, 21, 78, "Text",ExpressionUUID->"95110d1b-29ab-4f3c-9a81-62797f76050c"],
 Cell[CellGroupData[{
-Cell[148721, 2641, 8059, 201, 19, "Input",ExpressionUUID->"0a2d4d30-02a3-4705-9ebf-006b0186c4fc",
- CellOpen->False],
-Cell[156783, 2844, 3472, 67, 501, "Output",ExpressionUUID->"aa6df7d8-2d86-4896-ad84-e84527638aee"]
+Cell[148721, 2641, 8237, 206, 400, "Input",ExpressionUUID->"0a2d4d30-02a3-4705-9ebf-006b0186c4fc"],
+Cell[156961, 2849, 3474, 68, 501, "Output",ExpressionUUID->"4d904db8-855b-458a-b7d6-6c0507fb08b9"]
 }, Open  ]],
-Cell[160270, 2914, 591, 11, 34, "Text",ExpressionUUID->"0360823a-4880-4c61-a95a-27dff5c27deb"],
+Cell[160450, 2920, 591, 11, 34, "Text",ExpressionUUID->"0360823a-4880-4c61-a95a-27dff5c27deb"],
 Cell[CellGroupData[{
-Cell[160886, 2929, 7702, 196, 19, "Input",ExpressionUUID->"2cd21fb0-90bb-406c-a7cb-3d353b58dc06",
- CellOpen->False],
-Cell[168591, 3127, 3073, 61, 553, "Output",ExpressionUUID->"1b57ee87-fe94-4ed0-a916-88876f43ff10"]
+Cell[161066, 2935, 7884, 202, 400, "Input",ExpressionUUID->"2cd21fb0-90bb-406c-a7cb-3d353b58dc06"],
+Cell[168953, 3139, 3040, 61, 501, "Output",ExpressionUUID->"f8975e97-58ea-4f24-b705-39cd03c32b90"]
 }, Open  ]],
-Cell[171679, 3191, 402, 7, 34, "Text",ExpressionUUID->"c574c969-212b-4bad-ae19-9bfdc279a408"],
+Cell[172008, 3203, 402, 7, 34, "Text",ExpressionUUID->"c574c969-212b-4bad-ae19-9bfdc279a408"],
 Cell[CellGroupData[{
-Cell[172106, 3202, 7809, 198, 19, "Input",ExpressionUUID->"c4595508-2b91-42b4-b1ca-0ca898de8fc4",
- CellOpen->False],
-Cell[179918, 3402, 2928, 60, 501, "Output",ExpressionUUID->"3ae2718d-c6c0-4adb-a79c-17d718ee0c7c"]
+Cell[172435, 3214, 7987, 203, 400, "Input",ExpressionUUID->"c4595508-2b91-42b4-b1ca-0ca898de8fc4"],
+Cell[180425, 3419, 2926, 60, 501, "Output",ExpressionUUID->"af716369-4027-43cc-b140-d24438712e33"]
 }, Open  ]],
-Cell[182861, 3465, 682, 11, 34, "Text",ExpressionUUID->"5ff0336d-8e9f-4593-92bd-d9c8a72d862a"],
+Cell[183366, 3482, 779, 13, 56, "Text",ExpressionUUID->"57aaebdb-e122-4a14-9de7-2d1c4b9758e7"],
 Cell[CellGroupData[{
-Cell[183568, 3480, 9990, 254, 19, "Input",ExpressionUUID->"a430c046-21f5-4985-ac7a-d9962f058b5b",
+Cell[184170, 3499, 11912, 300, 19, "Input",ExpressionUUID->"53675e78-e701-4981-8259-f2e095b73574",
  CellOpen->False],
-Cell[193561, 3736, 64146, 1110, 377, "Output",ExpressionUUID->"086136c7-790c-43aa-8d87-e5ca4496b9b0"]
+Cell[196085, 3801, 4182, 80, 529, "Output",ExpressionUUID->"fdf7b963-b8f2-4aaa-98a9-61725e7b966a"]
 }, Open  ]],
-Cell[257722, 4849, 549, 8, 34, "Text",ExpressionUUID->"2603461a-63a3-4351-9519-df04ce18c1fd"],
+Cell[200282, 3884, 682, 11, 34, "Text",ExpressionUUID->"5ff0336d-8e9f-4593-92bd-d9c8a72d862a"],
 Cell[CellGroupData[{
-Cell[258296, 4861, 7444, 187, 19, "Input",ExpressionUUID->"82c2809b-6ea8-409b-93db-17fec7a82a01",
+Cell[200989, 3899, 9990, 254, 19, "Input",ExpressionUUID->"a430c046-21f5-4985-ac7a-d9962f058b5b",
  CellOpen->False],
-Cell[265743, 5050, 3227, 62, 433, "Output",ExpressionUUID->"f110e843-10c6-4251-ade5-b9a0f9ed93ef"]
+Cell[210982, 4155, 64146, 1110, 377, "Output",ExpressionUUID->"086136c7-790c-43aa-8d87-e5ca4496b9b0"]
+}, Open  ]],
+Cell[275143, 5268, 549, 8, 34, "Text",ExpressionUUID->"2603461a-63a3-4351-9519-df04ce18c1fd"],
+Cell[CellGroupData[{
+Cell[275717, 5280, 7444, 187, 19, "Input",ExpressionUUID->"82c2809b-6ea8-409b-93db-17fec7a82a01",
+ CellOpen->False],
+Cell[283164, 5469, 3228, 62, 433, "Output",ExpressionUUID->"f110e843-10c6-4251-ade5-b9a0f9ed93ef"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[269019, 5118, 310, 4, 67, "Section",ExpressionUUID->"7ccfbeb1-e8d8-4c07-a78b-a2af33a955e4"],
-Cell[269332, 5124, 2981, 42, 122, "Text",ExpressionUUID->"6e6db836-5946-44d9-9870-ae65ca0d14a5"]
+Cell[286441, 5537, 310, 4, 67, "Section",ExpressionUUID->"7ccfbeb1-e8d8-4c07-a78b-a2af33a955e4"],
+Cell[286754, 5543, 2981, 42, 122, "Text",ExpressionUUID->"6e6db836-5946-44d9-9870-ae65ca0d14a5"]
 }, Open  ]]
 }, Open  ]]
 }
