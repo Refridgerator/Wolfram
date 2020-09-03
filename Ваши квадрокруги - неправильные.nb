@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    293983,       5667]
-NotebookOptionsPosition[    289763,       5589]
-NotebookOutlinePosition[    290106,       5604]
-CellTagsIndexPosition[    290063,       5601]
+NotebookDataLength[    294131,       5673]
+NotebookOptionsPosition[    289860,       5592]
+NotebookOutlinePosition[    290203,       5607]
+CellTagsIndexPosition[    290160,       5604]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2834,6 +2834,7 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{"z", ",", "0.1"}], "}"}], ",", "0.01", ",", "2"}], "}"}]}], 
   "]"}]], "Input",
+ CellOpen->False,
  CellChangeTimes->{{3.808102199404811*^9, 3.8081022913995557`*^9}, {
    3.808102338596679*^9, 3.808102338820716*^9}, {3.808102408673749*^9, 
    3.8081024938866916`*^9}, {3.808102930604627*^9, 3.8081030121452303`*^9}, 
@@ -2879,7 +2880,7 @@ Cell[BoxData[
               1/$CellContext`n)), $CellContext`n -> 4], 
            E^(I $CellContext`\[Phi]) 
            Sqrt[(1 + Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
-             Sqrt[1 + (4 (1 - $CellContext`z$$)/$CellContext`z$$^2) 
+             Sqrt[1 + (4 ((1 - $CellContext`z$$)/$CellContext`z$$^2)) 
                 Cos[2 $CellContext`\[Phi]]^2 + (1/$CellContext`k$$^4 - 
                  2/$CellContext`k$$^2) 
                 Sin[2 $CellContext`\[Phi]]^2])]}]], {$CellContext`\[Phi], 0, 
@@ -3128,6 +3129,7 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{"z", ",", "0.48"}], "}"}], ",", "0.3", ",", "2"}], "}"}]}], 
   "]"}]], "Input",
+ CellOpen->False,
  CellChangeTimes->{{3.8081035276962795`*^9, 3.808103625839467*^9}, {
    3.808103740369912*^9, 3.8081037404612894`*^9}, {3.808104269116679*^9, 
    3.808104334791744*^9}, 3.808104437208226*^9, {3.8081045051667724`*^9, 
@@ -3169,7 +3171,7 @@ Cell[BoxData[
               1/$CellContext`n)), $CellContext`n -> 5], 
            E^(I $CellContext`\[Phi]) 
            Sqrt[(1 + Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
-             Sqrt[1 + (4 (1 - $CellContext`z$$)/$CellContext`z$$^2) 
+             Sqrt[1 + (4 ((1 - $CellContext`z$$)/$CellContext`z$$^2)) 
                 Cos[2 $CellContext`\[Phi]]^2 + (1/$CellContext`k$$^4 - 
                  2/$CellContext`k$$^2) 
                 Sin[2 $CellContext`\[Phi]]^2])]}]], {$CellContext`\[Phi], 0, 
@@ -3407,6 +3409,7 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{"z", ",", "1.02"}], "}"}], ",", "0.3", ",", "2"}], "}"}]}], 
   "]"}]], "Input",
+ CellOpen->False,
  CellChangeTimes->{{3.8081035276962795`*^9, 3.808103625839467*^9}, {
    3.808103740369912*^9, 3.8081037404612894`*^9}, {3.808104269116679*^9, 
    3.808104334791744*^9}, 3.808104437208226*^9, {3.8081045051667724`*^9, 
@@ -3449,7 +3452,7 @@ Cell[BoxData[
               1/$CellContext`n)), $CellContext`n -> 10], 
            E^(I $CellContext`\[Phi]) 
            Sqrt[(1 + Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
-             Sqrt[1 + (4 (1 - $CellContext`z$$)/$CellContext`z$$^2) 
+             Sqrt[1 + (4 ((1 - $CellContext`z$$)/$CellContext`z$$^2)) 
                 Cos[2 $CellContext`\[Phi]]^2 + (1/$CellContext`k$$^4 - 
                  2/$CellContext`k$$^2) 
                 Sin[2 $CellContext`\[Phi]]^2])]}]], {$CellContext`\[Phi], 0, 
@@ -3828,32 +3831,32 @@ Cell[BoxData[
         Evaluate[
          ReIm[{((Cos[$CellContext`\[Phi]]^2)^($CellContext`n$$/2) + (
                Sin[$CellContext`\[Phi]]^2)^($CellContext`n$$/2))^(-((
-               1 + $CellContext`n$$)/$CellContext`n$$)) (
-            I (Cos[$CellContext`\[Phi]]^2)^($CellContext`n$$/2) 
+               1 + $CellContext`n$$)/$CellContext`n$$)) ((
+              I (Cos[$CellContext`\[Phi]]^2)^($CellContext`n$$/2)) 
              Sec[$CellContext`\[Phi]] - 
             Csc[$CellContext`\[Phi]] (
-              Sin[$CellContext`\[Phi]]^2)^($CellContext`n$$/2)), (I 
-            E^((-3) I $CellContext`\[Phi]) ((1 + 
-               Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
-              Sqrt[1 - 4 (-1 + $CellContext`z$$) 
-                Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2 + (
-                  1/$CellContext`k$$^4 - 2/$CellContext`k$$^2) 
-                 Sin[2 $CellContext`\[Phi]]^2]))^(3/
-              2) ((-1 + E^(4 I $CellContext`\[Phi])) $CellContext`z$$^2 - 
-             2 (-1 + E^(4 
-                I $CellContext`\[Phi])) $CellContext`k$$^2 $CellContext`z$$^2 + 
-             2 $CellContext`k$$^4 (2 - 2 $CellContext`z$$ + 
-               E^(4 I $CellContext`\[Phi]) (2 - 
+              Sin[$CellContext`\[Phi]]^2)^($CellContext`n$$/2)), (((I 
+              E^(((-3) I) $CellContext`\[Phi])) ((1 + 
+                Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])/(1 + 
+               Sqrt[1 - (4 (-1 + $CellContext`z$$)) (
+                  Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2) + (
+                   1/$CellContext`k$$^4 - 2/$CellContext`k$$^2) 
+                  Sin[2 $CellContext`\[Phi]]^2]))^(3/2)) ((-1 + 
+               E^((4 I) $CellContext`\[Phi])) $CellContext`z$$^2 - ((
+               2 (-1 + E^((4 
+                   I) $CellContext`\[Phi]))) $CellContext`k$$^2) \
+$CellContext`z$$^2 + (2 $CellContext`k$$^4) (2 - 2 $CellContext`z$$ + 
+               E^((4 I) $CellContext`\[Phi]) (2 - 
                  2 $CellContext`z$$ + $CellContext`z$$^2 (1 + 
-                   Sqrt[1 - 4 (-1 + $CellContext`z$$) 
-                    Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2 + (1 - 
-                    2 $CellContext`k$$^2) 
-                    Sin[2 $CellContext`\[Phi]]^2/$CellContext`k$$^4])))))/(
-           2 $CellContext`k$$^4 (1 + 
-            Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2]) \
-$CellContext`z$$^2 
-           Sqrt[1 - 4 (-1 + $CellContext`z$$) 
-             Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2 + (
+                   Sqrt[1 - (4 (-1 + $CellContext`z$$)) (
+                    Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2) + (1 - 
+                    2 $CellContext`k$$^2) (
+                    Sin[2 $CellContext`\[Phi]]^2/$CellContext`k$$^4)])))))/(((\
+(2 $CellContext`k$$^4) (1 + 
+              Sqrt[(-2 + $CellContext`z$$)^2/$CellContext`z$$^2])) \
+$CellContext`z$$^2) 
+           Sqrt[1 - (4 (-1 + $CellContext`z$$)) (
+              Cos[2 $CellContext`\[Phi]]^2/$CellContext`z$$^2) + (
                1/$CellContext`k$$^4 - 2/$CellContext`k$$^2) 
               Sin[2 $CellContext`\[Phi]]^2])}]], {$CellContext`\[Phi], 0.01, 
          2 Pi}, GridLines -> Automatic, PlotStyle -> {{
@@ -5632,41 +5635,44 @@ Cell[146003, 2574, 1299, 40, 121, "Input",ExpressionUUID->"fb3d672f-dfb6-4664-a1
  Evaluatable->False],
 Cell[147305, 2616, 1391, 21, 78, "Text",ExpressionUUID->"95110d1b-29ab-4f3c-9a81-62797f76050c"],
 Cell[CellGroupData[{
-Cell[148721, 2641, 8237, 206, 400, "Input",ExpressionUUID->"0a2d4d30-02a3-4705-9ebf-006b0186c4fc"],
-Cell[156961, 2849, 3474, 68, 501, "Output",ExpressionUUID->"4d904db8-855b-458a-b7d6-6c0507fb08b9"]
-}, Open  ]],
-Cell[160450, 2920, 591, 11, 34, "Text",ExpressionUUID->"0360823a-4880-4c61-a95a-27dff5c27deb"],
-Cell[CellGroupData[{
-Cell[161066, 2935, 7884, 202, 400, "Input",ExpressionUUID->"2cd21fb0-90bb-406c-a7cb-3d353b58dc06"],
-Cell[168953, 3139, 3040, 61, 501, "Output",ExpressionUUID->"f8975e97-58ea-4f24-b705-39cd03c32b90"]
-}, Open  ]],
-Cell[172008, 3203, 402, 7, 34, "Text",ExpressionUUID->"c574c969-212b-4bad-ae19-9bfdc279a408"],
-Cell[CellGroupData[{
-Cell[172435, 3214, 7987, 203, 400, "Input",ExpressionUUID->"c4595508-2b91-42b4-b1ca-0ca898de8fc4"],
-Cell[180425, 3419, 2926, 60, 501, "Output",ExpressionUUID->"af716369-4027-43cc-b140-d24438712e33"]
-}, Open  ]],
-Cell[183366, 3482, 779, 13, 56, "Text",ExpressionUUID->"57aaebdb-e122-4a14-9de7-2d1c4b9758e7"],
-Cell[CellGroupData[{
-Cell[184170, 3499, 11912, 300, 19, "Input",ExpressionUUID->"53675e78-e701-4981-8259-f2e095b73574",
+Cell[148721, 2641, 8255, 207, 19, "Input",ExpressionUUID->"0a2d4d30-02a3-4705-9ebf-006b0186c4fc",
  CellOpen->False],
-Cell[196085, 3801, 4182, 80, 529, "Output",ExpressionUUID->"fdf7b963-b8f2-4aaa-98a9-61725e7b966a"]
+Cell[156979, 2850, 3476, 68, 501, "Output",ExpressionUUID->"4d904db8-855b-458a-b7d6-6c0507fb08b9"]
 }, Open  ]],
-Cell[200282, 3884, 682, 11, 34, "Text",ExpressionUUID->"5ff0336d-8e9f-4593-92bd-d9c8a72d862a"],
+Cell[160470, 2921, 591, 11, 34, "Text",ExpressionUUID->"0360823a-4880-4c61-a95a-27dff5c27deb"],
 Cell[CellGroupData[{
-Cell[200989, 3899, 9990, 254, 19, "Input",ExpressionUUID->"a430c046-21f5-4985-ac7a-d9962f058b5b",
+Cell[161086, 2936, 7902, 203, 19, "Input",ExpressionUUID->"2cd21fb0-90bb-406c-a7cb-3d353b58dc06",
  CellOpen->False],
-Cell[210982, 4155, 64146, 1110, 377, "Output",ExpressionUUID->"086136c7-790c-43aa-8d87-e5ca4496b9b0"]
+Cell[168991, 3141, 3042, 61, 501, "Output",ExpressionUUID->"f8975e97-58ea-4f24-b705-39cd03c32b90"]
 }, Open  ]],
-Cell[275143, 5268, 549, 8, 34, "Text",ExpressionUUID->"2603461a-63a3-4351-9519-df04ce18c1fd"],
+Cell[172048, 3205, 402, 7, 34, "Text",ExpressionUUID->"c574c969-212b-4bad-ae19-9bfdc279a408"],
 Cell[CellGroupData[{
-Cell[275717, 5280, 7444, 187, 19, "Input",ExpressionUUID->"82c2809b-6ea8-409b-93db-17fec7a82a01",
+Cell[172475, 3216, 8005, 204, 19, "Input",ExpressionUUID->"c4595508-2b91-42b4-b1ca-0ca898de8fc4",
  CellOpen->False],
-Cell[283164, 5469, 3228, 62, 433, "Output",ExpressionUUID->"f110e843-10c6-4251-ade5-b9a0f9ed93ef"]
+Cell[180483, 3422, 2928, 60, 501, "Output",ExpressionUUID->"af716369-4027-43cc-b140-d24438712e33"]
+}, Open  ]],
+Cell[183426, 3485, 779, 13, 56, "Text",ExpressionUUID->"57aaebdb-e122-4a14-9de7-2d1c4b9758e7"],
+Cell[CellGroupData[{
+Cell[184230, 3502, 11912, 300, 19, "Input",ExpressionUUID->"53675e78-e701-4981-8259-f2e095b73574",
+ CellOpen->False],
+Cell[196145, 3804, 4219, 80, 529, "Output",ExpressionUUID->"fdf7b963-b8f2-4aaa-98a9-61725e7b966a"]
+}, Open  ]],
+Cell[200379, 3887, 682, 11, 34, "Text",ExpressionUUID->"5ff0336d-8e9f-4593-92bd-d9c8a72d862a"],
+Cell[CellGroupData[{
+Cell[201086, 3902, 9990, 254, 19, "Input",ExpressionUUID->"a430c046-21f5-4985-ac7a-d9962f058b5b",
+ CellOpen->False],
+Cell[211079, 4158, 64146, 1110, 377, "Output",ExpressionUUID->"086136c7-790c-43aa-8d87-e5ca4496b9b0"]
+}, Open  ]],
+Cell[275240, 5271, 549, 8, 34, "Text",ExpressionUUID->"2603461a-63a3-4351-9519-df04ce18c1fd"],
+Cell[CellGroupData[{
+Cell[275814, 5283, 7444, 187, 19, "Input",ExpressionUUID->"82c2809b-6ea8-409b-93db-17fec7a82a01",
+ CellOpen->False],
+Cell[283261, 5472, 3228, 62, 433, "Output",ExpressionUUID->"f110e843-10c6-4251-ade5-b9a0f9ed93ef"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[286441, 5537, 310, 4, 67, "Section",ExpressionUUID->"7ccfbeb1-e8d8-4c07-a78b-a2af33a955e4"],
-Cell[286754, 5543, 2981, 42, 122, "Text",ExpressionUUID->"6e6db836-5946-44d9-9870-ae65ca0d14a5"]
+Cell[286538, 5540, 310, 4, 67, "Section",ExpressionUUID->"7ccfbeb1-e8d8-4c07-a78b-a2af33a955e4"],
+Cell[286851, 5546, 2981, 42, 122, "Text",ExpressionUUID->"6e6db836-5946-44d9-9870-ae65ca0d14a5"]
 }, Open  ]]
 }, Open  ]]
 }
